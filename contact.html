@@ -1,0 +1,25 @@
+<?php get_header(); ?>
+
+<main>
+	<h2>Contact</h2>
+	<p>Do you have any questions or have feedback about your experience with us?</p>
+	<p>Send us a message using the contact form below, or get in touch with us using one of the following contact methods:</p>
+	<ul>
+		<li><strong>Mailing Address:</strong> 1310 Little Baltimore Road, Hockessin, DE 19707</li>
+		<li><strong>Phone:</strong> (302) 239-9847</li>
+		<li><strong>Fax:</strong> (302) 239-0902</li>
+		<li><strong>Email:</strong> <a href="mailto:WFC@WoodsideFarmCreamery.com">WFC@WoodsideFarmCreamery.com</a></li>
+	</ul>
+	<p>Please note that <em>our mailing address is not the same as our store address,</em> which is <a href="https://www.google.com/maps/place/Woodside+Farm+Creamery/@39.7682051,-75.7215526,163m/data=!3m1!1e3!4m13!1m7!3m6!1s0x89c6555d97da3281:0x92f993de0f4af606!2s378+N+Star+Rd,+Newark,+DE+19711!3b1!8m2!3d39.7683035!4d-75.7215439!3m4!1s0x89c6555d8eab561f:0x4f34f840e200d26e!8m2!3d39.7683035!4d-75.7215439">378 North Star Road, Newark, DE 19711</a></p>
+	<form action="/wp-content/themes/woodsidefc-custom/contact-form-processing.php" method="post">
+		<label for="name">Name:</label><br>
+		<input id="name" name="name" type="text" required><br>
+		<label for="name">Email:</label><br>
+		<input id="email" name="email" type="email" required><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message" required></textarea><br>
+		<button type="submit" class="btn btn--primary">Send Message</button>
+	</form>
+</main>
+
+<?php get_footer(); ?>
