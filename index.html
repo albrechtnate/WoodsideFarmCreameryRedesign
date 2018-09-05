@@ -1,70 +1,175 @@
-<?php get_header(); ?>
-
-<main>
-	<section class="intro-section">
-		<h2 class="intro-section__expressive-type"><span>Farm-Fresh</span> <span>Homemade</span> <span>Ice Cream</span></h2>
-        <div class="intro-section__image">
-        	<img width="882" height="588" src="http://pandora-equator-3000.codio.io/wp-content/uploads/woodside-building.jpg" class="attachment-full size-full wp-post-image" alt="Woodside Farm Creamery Building" srcset="http://pandora-equator-3000.codio.io/wp-content/uploads/woodside-building.jpg 882w, http://pandora-equator-3000.codio.io/wp-content/uploads/woodside-building-300x200.jpg 300w, http://pandora-equator-3000.codio.io/wp-content/uploads/woodside-building-768x512.jpg 768w" sizes="(max-width: 882px) 100vw, 882px">
-        </div>
-		<div class="intro-section__intro-text">
-            <p><b>Open 12&ndash;8 p.m. Daily</b></p>
-            <p>Woodside Farm Creamery has served the community farm-fresh, award-winning ice cream straight from our dairy cows since 1998. We hope you’ll stop in to visit the Creamery and say hello to our New Jersey cows!</p>
-        </div>
-		<a href="visit.html" class="intro-section__cta btn btn--special">Come on By &rarr;</a>
-	</section>
-	<section class="ice-cream-teaser">
-		<h2 class="ice-cream-teaser__heading">Over 20 Different Flavors</h2>
-		<a href="menu.html" class="ice-cream-teaser__cta">View our Menu &rarr;</a>
-        <div class="ice-cream-teaser__images">
-            <img src="images/system/chocolate.png">
-            <img src="images/system/cookiesandcream.png">
-            <img src="images/system/oreo.png">
-        </div>
-	</section>
-	<section class="social-media-section">
-		<div class="social-media-section__blurb">
-			<p>We love seeing your photos on social media</p>
-			<p class="social-media-section__blurb-hashtag">#woodsidefc</p>
-		</div>
-		<ul class="social-media-section__user-photos">
-			<li>
-                <div>
-                    <img width="468" height="336" src="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-1.jpeg" class="attachment-full size-full" alt="Friends enjoy ice cream at Woodside Farm Creamery. Image posted by @kkatiepx" srcset="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-1.jpeg 468w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-1-300x215.jpeg 300w" sizes="(max-width: 468px) 100vw, 468px">
-                </div>
-                <p class="social-media-section__photo-attribution">@kkatiepx</p>
-			</li>
-			<li>
-                <div>
-                    <img width="464" height="464" src="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-2.jpeg" class="attachment-full size-full" alt="Beautiful fall day at Woodside Farm Creamery. Dogs like coming too! Image posted by @marie28" srcset="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-2.jpeg 464w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-2-150x150.jpeg 150w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-2-300x300.jpeg 300w" sizes="(max-width: 464px) 100vw, 464px">
-                </div>
-                <p class="social-media-section__photo-attribution">@marie28</p>
-			</li>
-			<li>
-                <div>
-                    <img width="464" height="464" src="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-3.jpeg" class="attachment-full size-full" alt="A great capture of our New Jersey cows! Image posted by @grdrbraim" srcset="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-3.jpeg 464w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-3-150x150.jpeg 150w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-3-300x300.jpeg 300w" sizes="(max-width: 464px) 100vw, 464px">
-                </div>
-                <p class="social-media-section__photo-attribution">@grdrbraim</p>
-			</li>
-			<li>
-                <div>
-                    <img width="464" height="464" src="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-4.jpeg" class="attachment-full size-full" alt="Friends enjoy ice cream at Woodside Farm Creamery. Image posted by @jennifer34" srcset="http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-4.jpeg 464w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-4-150x150.jpeg 150w, http://pandora-equator-3000.codio.io/wp-content/uploads/social-media-photo-4-300x300.jpeg 300w" sizes="(max-width: 464px) 100vw, 464px">
-                </div>
-                <p class="social-media-section__photo-attribution">@jennifer34</p>
-			</li>
-		</ul>
-		<h2 class="follow-us-stamp"><img src="images/system/follow-us-stamp.svg" alt="Follow Us"></h2>
-		<ul class="social-media-section__follow-btns">
-			<li class="btn btn--facebook">
-				<a href="https://www.facebook.com/WoodsideCreamery">Facebook</a>
-			</li>
-			<li class="btn btn--twitter">
-				<a href="https://twitter.com/WFCreamery">Twitter</a>
-			</li>
-			<li class="btn btn--primary">
-				<a href="https://www.instagram.com/wfcreamery">Instagram</a>
-			</li>
-		</ul>
-	</section>
-</main>
-
-<?php get_footer(); ?>
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="charset="UTF-8">
+		<title>Woodside Farm Creamery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="static/css/style.css">
+		<meta name='robots' content='noindex,follow'>
+		<link rel="icon" href="static/images/system/favicon.png" sizes="512x512">
+	</head>
+	<body class="home">
+		<header class="main-header">
+			<h1 class="logo">
+				<a href="index.html">
+					<img src="static/images/system/logo.png" alt="Woodside Farm Creamery">
+				</a>
+			</h1>
+			<nav class="main-header__main-nav">
+				<ul class="menu">
+					<li class="current-menu-item">
+						<a href="index.html">Home</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="visit.html">Visit</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="menu.html">Menu</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="gifts.html">Gifts</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="groups-and-catering.html">Groups and Catering</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="employment.html">Employment</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+						<li class="separator">&bull;</li>
+					</li>
+					<li class="main-nav__more-link">
+						<a href="navigation.html">More</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="intro-section">
+				<h2 class="intro-section__expressive-type"><span>Farm-Fresh</span> <span>Homemade</span> <span>Ice Cream</span></h2>
+				<div class="intro-section__image">
+					<img width="882" height="588" src="static/images/uploads/woodside-building.jpg" alt="Woodside Farm Creamery Building" srcset="static/images/uploads/woodside-building.jpg 882w, static/images/uploads/woodside-building-300x200.jpg 300w, static/images/uploads/woodside-building-768x512.jpg 768w" sizes="(max-width: 882px) 100vw, 882px">
+				</div>
+				<div class="intro-section__intro-text">
+					<p><b>Open 12&thinsp;&ndash;&thinsp;8 p.m. Daily</b></p>
+					<p>Woodside Farm Creamery has served the community farm-fresh, award-winning ice cream straight from our dairy cows since 1998. We hope you’ll stop in to visit the Creamery and say hello to our New Jersey cows!</p>
+				</div>
+				<a href="visit.html" class="intro-section__cta btn btn--special">Come on By &rarr;</a>
+			</section>
+			<section class="ice-cream-teaser">
+				<h2 class="ice-cream-teaser__heading">Over 20 Different Flavors</h2>
+				<a href="menu.html" class="ice-cream-teaser__cta">View our Menu &rarr;</a>
+				<div class="ice-cream-teaser__images">
+					<img src="static/images/system/chocolate.png">
+					<img src="static/images/system/cookiesandcream.png">
+					<img src="static/images/system/oreo.png">
+				</div>
+			</section>
+			<section class="social-media-section">
+				<div class="social-media-section__blurb">
+					<p>We love seeing your photos on social media</p>
+					<p class="social-media-section__blurb-hashtag">#woodsidefc</p>
+				</div>
+				<ul class="social-media-section__user-photos">
+					<li>
+						<div>
+							<img width="468" height="336" src="static/images/uploads/social-media-photo-1.jpeg" alt="Friends enjoy ice cream at Woodside Farm Creamery. Image posted by @kkatiepx" srcset="static/images/uploads/social-media-photo-1.jpeg 468w, static/images/uploads/social-media-photo-1-300x215.jpeg 300w" sizes="(max-width: 468px) 100vw, 468px">
+						</div>
+						<p class="social-media-section__photo-attribution">@kkatiepx</p>
+					</li>
+					<li>
+						<div>
+							<img width="464" height="464" src="static/images/uploads/social-media-photo-2.jpeg" alt="Beautiful fall day at Woodside Farm Creamery. Dogs like coming too! Image posted by @marie28" srcset="static/images/uploads/social-media-photo-2.jpeg 464w, static/images/uploads/social-media-photo-2-150x150.jpeg 150w, static/images/uploads/social-media-photo-2-300x300.jpeg 300w" sizes="(max-width: 464px) 100vw, 464px">
+						</div>
+						<p class="social-media-section__photo-attribution">@marie28</p>
+					</li>
+					<li>
+						<div>
+							<img width="464" height="464" src="static/images/uploads/social-media-photo-3.jpeg" class="attachment-full size-full" alt="A great capture of our New Jersey cows! Image posted by @grdrbraim" srcset="static/images/uploads/social-media-photo-3.jpeg 464w, static/images/uploads/social-media-photo-3-150x150.jpeg 150w, static/images/uploads/social-media-photo-3-300x300.jpeg 300w" sizes="(max-width: 464px) 100vw, 464px">
+						</div>
+						<p class="social-media-section__photo-attribution">@grdrbraim</p>
+					</li>
+					<li>
+						<div>
+							<img width="464" height="464" src="static/images/uploads/social-media-photo-4.jpeg" class="attachment-full size-full" alt="Friends enjoy ice cream at Woodside Farm Creamery. Image posted by @jennifer34" srcset="static/images/uploads/social-media-photo-4.jpeg 464w, static/images/uploads/social-media-photo-4-150x150.jpeg 150w, static/images/uploads/social-media-photo-4-300x300.jpeg 300w" sizes="(max-width: 464px) 100vw, 464px">
+						</div>
+						<p class="social-media-section__photo-attribution">@jennifer34</p>
+					</li>
+				</ul>
+				<h2 class="follow-us-stamp"><img src="static/images/system/follow-us-stamp.svg" alt="Follow Us"></h2>
+				<ul class="social-media-section__follow-btns">
+					<li class="btn btn--facebook">
+						<a href="https://www.facebook.com/WoodsideCreamery">Facebook</a>
+					</li>
+					<li class="btn btn--twitter">
+						<a href="https://twitter.com/WFCreamery">Twitter</a>
+					</li>
+					<li class="btn btn--primary">
+						<a href="https://www.instagram.com/wfcreamery">Instagram</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<div class="main-footer__cow-greeting">
+				<div>
+					<h2>Come by Soon!</h2>
+					<p>Our cows will be waiting.</p>
+				</div>
+			</div>
+			<div class="main-footer__primary">
+				<a href="navigation.html" class="btn btn--special footer-nav-link">Site Navigation</a>
+				<nav class="footer-nav">
+					<ul class="menu">
+						<li class="current-menu-item">
+							<a href="index.html">Home</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="visit.html">Visit</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="menu.html">Menu</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="gifts.html">Gifts</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="groups-and-catering.html">Groups and Catering</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="employment.html">Employment</a>
+							<li class="separator">&bull;</li>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+							<li class="separator">&bull;</li>
+						</li>
+					</ul>
+				</nav>
+				<p class="main-footer__address">378 North Star Road, Newark, DE 19711</p>
+				<p class="hours-and-date"><span>Open 12&thinsp;&ndash;&thinsp;8 p.m. Daily</span><span>(302) 239-9847</span></p>
+			</div>
+			<p class="main-footer__copyright">Copyright 2018 Woodside Farm Creamery</p>
+		</footer>
+	</body>
+</html>

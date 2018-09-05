@@ -13,26 +13,26 @@
 
 @font-face {
     font-family: 'Cast Iron';
-    src: url('assets/fonts/castiron-condensed-webfont.woff2') format('woff2'),
-         url('assets/fonts/castiron-condensed-webfont.woff') format('woff');
+    src: url('../fonts/castiron-condensed-webfont.woff2') format('woff2'),
+         url('../fonts/castiron-condensed-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Regina Black Hilite';
-    src: url('assets/fonts/reginablack-hilite-webfont.woff2') format('woff2'),
-         url('assets/fonts/reginablack-hilite-webfont.woff') format('woff');
+    src: url('../fonts/reginablack-hilite-webfont.woff2') format('woff2'),
+         url('../fonts/reginablack-hilite-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Aleo';
-    src: url('assets/fonts/aleo-regular-webfont.woff2') format('woff2'),
-         url('assets/fonts/aleo-regular-webfont.woff') format('woff');
+    src: url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-regular-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Aleo';
-    src: url('assets/fonts/aleo-italic-webfont.woff2') format('woff2'),
-         url('assets/fonts/aleo-italic-webfont.woff') format('woff');
+    src: url('../fonts/aleo-italic-webfont.woff2') format('woff2'),
+         url('../fonts/aleo-italic-webfont.woff') format('woff');
     font-style: italic;
 }
 
@@ -70,7 +70,7 @@ body:not(.navigation-page)::after{
     content: "";
     display: block;
     z-index: -1;
-    background-image: url(assets/stonewall.jpg);
+    background-image: url(../images/system/stonewall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated;
@@ -143,7 +143,7 @@ strong, b{
     display: block;
     height: 22px;
     width: 100%;
-    background-image: url("assets/btn-special-decoration.svg");
+    background-image: url("../images/system/btn-special-decoration.svg");
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
@@ -163,7 +163,7 @@ strong, b{
 
 .main-header{
 	background-color: white;
-	background-image: url("assets/header-vertical-paneling.png");
+	background-image: url("../images/system/header-vertical-paneling.png");
     background-repeat-y: no-repeat;
     background-size: 320px;
     height: 144px;
@@ -178,7 +178,7 @@ strong, b{
     height: 48px;
     position: absolute;
     bottom: 0;
-    background-image: url("assets/horizontal-board.jpg");
+    background-image: url("../images/system/horizontal-board.jpg");
     background-repeat-y: no-repeat;
     background-size: 320px;
     box-shadow: 0 1px 10px 2px rgba(0,0,0,0.21);
@@ -208,7 +208,7 @@ strong, b{
 }
 
 .main-header__main-nav::before{
-    background-image: url("assets/chains.png");
+    background-image: url("../images/system/chains.png");
     background-repeat: no-repeat;
     content: "";
     display: block;
@@ -297,7 +297,7 @@ strong, b{
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("assets/grunge-texture.png");
+    background-image: url("../images/system/grunge-texture.png");
     background-size: 290px;
     mix-blend-mode: screen;
     opacity: 0.38;
@@ -437,7 +437,7 @@ strong, b{
 
 .social-media-section{
     background-color: #7B7B55;
-    background-image: url("assets/grunge-texture.png");
+    background-image: url("../images/system/grunge-texture.png");
     background-size: 290px;
     background-blend-mode: screen;
     padding-top: 24px;
@@ -541,7 +541,7 @@ p.social-media-section__blurb-hashtag{
 .social-media-section__user-photos div::before{
     content: "";
     display: block;
-    background-image: url("assets/tape.png");
+    background-image: url("../images/system/tape.png");
     background-size: 77px;
     width: 100%;
     height: 26px;
@@ -554,7 +554,7 @@ p.social-media-section__blurb-hashtag{
 }
 
 .social-media-section__user-photos li:nth-child(even) div::before{
-    background-image: url("assets/tape-2.png");
+    background-image: url("../images/system/tape-2.png");
     transform: rotate(5deg);
 }
 
@@ -627,7 +627,7 @@ p.social-media-section__blurb-hashtag{
 }
 
 .main-footer__cow-greeting{
-    background-image: url("assets/cows.png");
+    background-image: url("../images/system/cows.png");
     background-size: 241px;
     background-repeat: no-repeat;
     height: 238px;
@@ -667,7 +667,7 @@ body:not(.home) .main-footer__cow-greeting{
 }
 
 .main-footer__primary{
-    background-image: url("assets/wooden-brown-boards.jpg");
+    background-image: url("../images/system/wooden-brown-boards.jpg");
     background-size: 321px;
     padding-top: 30px;
     padding-bottom: 24px;
@@ -693,7 +693,7 @@ body:not(.home) .main-footer__cow-greeting{
     font-weight: 500;
     color: #7B7B55;
     font-size: 0.875rem;
-    background-image: url("assets/horizontal-board.jpg");
+    background-image: url("../images/system/horizontal-board.jpg");
     background-size: 320px;
     margin: 0;
     line-height: 1.786;
@@ -938,7 +938,7 @@ img.aligncenter{
     }
     
     .main-header__main-nav::before{
-        background-image: url("assets/chains-desktop.png");
+        background-image: url("../images/system/chains-desktop.png");
         background-size: 658px;
         margin-top: -48px;
         z-index: -1;
@@ -1017,7 +1017,7 @@ img.aligncenter{
     .intro-section__image::before{
         content: "";
         display: block;
-        background-image: url("assets/tape-large.png");
+        background-image: url("../images/system/tape-large.png");
         background-size: 113px;
         width: 100%;
         height: 38px;
@@ -1214,7 +1214,7 @@ img.aligncenter{
     }
     
     .footer-nav:before{
-        background-image: url(assets/chains-desktop.png);
+        background-image: url(../images/system/chains-desktop.png);
         background-size: 658px;
         margin-top: -48px;
         background-repeat: no-repeat;
