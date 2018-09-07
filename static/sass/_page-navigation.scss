@@ -1,0 +1,96 @@
+.navigation-page{
+	background-image: none;
+}
+
+.navigation-page h2{
+	font-family: "Cast Iron";
+	font-size: 1.75rem;
+	font-weight: normal;
+	color: white;
+	background-image: linear-gradient(-180deg, $secondary-medium-color 0%, $secondary-text-color 100%);
+	margin: 0 0 16px 0;
+	line-height: 1.715;
+	text-align: center;
+	letter-spacing: 0.0412em;
+}
+
+.navigation-page nav > ul{
+	list-style: none;
+	padding: 0 24px;
+	margin: 0;
+}
+
+.navigation-page li{
+	border-bottom: 1px solid $semi-neutral;
+}
+
+.navigation-page li:last-child{
+	border-bottom: none;
+}
+
+.navigation-page a{
+	color: $mid-dark-text-color;
+	display: block;
+	font-size: 1rem;
+	padding: 0.5rem 0 0.5rem 0;
+	line-height: 1.5;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "Aleo";
+}
+
+@media only screen and (min-width: $large-breakpoint){
+	
+	.main-header{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.logo{
+		position: relative;
+		bottom: 0;
+		width: auto;
+		margin-left: 9.5%;
+		margin-top: 19px;
+	}
+	
+	.main-header__main-nav{
+		position: relative;
+		margin-right: 9.5%;
+		margin-top: 45px;
+	}
+	
+	.main-header__main-nav .menu{
+		margin: 0;
+		min-width: initial;
+		max-width: none;
+		width: auto;
+		justify-content: flex-start;
+		display: inline-block;
+		padding: 0 25px;
+	}
+	
+	.main-header__main-nav::before{
+		background-image: url("../images/system/chains-desktop.png");
+		background-size: 658px;
+		margin-top: -48px;
+		z-index: -1;
+	}
+	
+	.main-header__main-nav .menu li, .main-header__main-nav .menu li:nth-child(-n+6){
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	
+	.main-header__main-nav .menu li.main-nav__more-link{
+		display: none;
+	}
+	
+	.main-header__main-nav .menu li:nth-last-child(2){
+		display: none;
+	}
+	
+	.separator{
+		padding: 0 11px;
+	}
+}
