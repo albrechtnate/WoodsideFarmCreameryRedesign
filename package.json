@@ -1,0 +1,27 @@
+{
+  "name": "woodsidefarmcreameryredesign",
+  "version": "1.0.0",
+  "description": "A redesign of Woodside Farm Creamery’s website. This project is an educational exercise and in no way associated with Woodside Farm Creamery.",
+  "main": "index.js",
+  "scripts": {
+    "sync": "browser-sync start -s \"src\" -f \"src/**/*.*\"",
+    "sass": "node-sass -w --include-path='src/static/sass' --source-map=true src/static/sass/styles.scss src/static/css/styles.css",
+    "start": "npm-run-all -p sync sass",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albrechtnate/WoodsideFarmCreameryRedesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albrechtnate/WoodsideFarmCreameryRedesign/issues"
+  },
+  "homepage": "https://github.com/albrechtnate/WoodsideFarmCreameryRedesign#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3"
+  }
+}
