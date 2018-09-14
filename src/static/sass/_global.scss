@@ -9,56 +9,42 @@ body{
 	color: $dark-text-color;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
-}
 
-@media only screen and (min-width : 320px) and (max-width : 700px) {
-	body {-webkit-text-size-adjust: none;}
-}
-
-body:not(.navigation-page)::after{
-	position: absolute;
-	width: 100%;
-	max-width: 1920px;
-	height: 250px;
-	top: 144px;
-	content: "";
-	display: block;
-	z-index: -1;
-	background-image: url(../images/system/stonewall.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	image-rendering: pixelated;
-}
-
-body:not(.home) main{
-	background-color: white;
-	padding: 24px;
-	max-width: 850px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media only screen and (min-width: 915px) {
-	
-	body:not(.home) main {
-		margin-bottom: 72px;
-		box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.25);
+	@media only screen and (min-width : 320px) and (max-width : 700px) {
+		-webkit-text-size-adjust: none;
 	}
-}
 
-@media only screen and (min-width: $large-breakpoint){
-	
-	body:not(.navigation-page)::after{
-		height: 338px;
+	&:not(.navigation-page)::after{
+		position: absolute;
+		width: 100%;
+		max-width: 1920px;
+		height: 250px;
+		top: 144px;
+		content: "";
+		display: block;
+		z-index: -1;
+		background-image: url(../images/system/stonewall.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		image-rendering: pixelated;
+
+		@media only screen and (min-width: $large-breakpoint){
+			height: 338px;
+		}
 	}
-}
 
-main{
-	margin-top: 97px;
-}
+	&:not(.home) main{
+		background-color: white;
+		padding: 24px;
+		max-width: 850px;
+		margin-left: auto;
+		margin-right: auto;
 
-strong, b{
-	font-weight: 500;
+		@media only screen and (min-width: 915px) {
+			margin-bottom: 72px;
+			box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.25);
+		}
+	}
 }
 
 .btn{
@@ -70,15 +56,15 @@ strong, b{
 	padding: 3px 15px 5px 15px;
 	border-radius: 2px;
 	transition: transform 500ms ease;
-}
 
-.btn:hover{
-	transform: scale(1.05);
-}
+	&:hover{
+		transform: scale(1.05);
+	}
 
-.btn a{
-	color: white;
-	text-decoration: none;
+	a{
+		color: white;
+		text-decoration: none;
+	}
 }
 
 .btn--primary{
@@ -104,91 +90,98 @@ strong, b{
 	margin: 26px 0 26px 0;
 }
 
-.btn--special::before, .btn--special::after{
-	content: "";
-	display: block;
-	height: 22px;
-	width: 100%;
-	background-image: url("../images/system/btn-special-decoration.svg");
-	background-repeat: no-repeat;
-	position: absolute;
-	left: 0;
-	background-position-x: center;
-}
+.btn--special{
+	&::before, &::after{
+		content: "";
+		display: block;
+		height: 22px;
+		width: 100%;
+		background-image: url("../images/system/btn-special-decoration.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 0;
+		background-position-x: center;
+	}
 
-.btn--special::before{
-	top: -26px;
-}
+	&::before{
+		top: -26px;
+	}
 
-.btn--special::after{
-	transform: rotate(180deg);
-	margin-top: 4px;
-}
+	&::after{
+		transform: rotate(180deg);
+		margin-top: 4px;
+	}
 
-@media only screen and (min-width: $large-breakpoint){
-	
-	.btn--special{
+	@media only screen and (min-width: $large-breakpoint){
 		font-size: 1.25rem;
 		line-height: 1.8;
 		letter-spacing: 0.0215em;
+
+		&::before, &::after{
+			background-size: 190px;
+			height: 32px;
+		}
+
+		&::before {
+			top: -33px;
+		}
+
+		&::after {
+			margin-top: 1px;
+		}
 	}
-	
-	.btn--special::before, .btn--special::after{
-		background-size: 190px;
-		height: 32px;
+}
+
+main{
+	margin-top: 97px;
+
+	h2{
+		font-family: "Aleo";
+		font-size: 1.25rem;
+		line-height: 1.2;
+		margin-top: 0;
+		margin-bottom: 24px;
+		color: $secondary-text-color;
 	}
 
-	.btn--special::before {
-		top: -33px;
+	h3{
+		font-family: "Aleo";
+		font-style: italic;
+		font-weight: normal;
+		font-size: 1.25rem;
+		line-height: 1.2;
+		margin-top: 36px;
+		margin-bottom: 12px;
+		color: $secondary-text-color;
 	}
 
-	.btn--special::after {
-		margin-top: 1px;
+	h4{
+		font-family: "Aleo";
+		font-size: 1.125rem;
+		font-weight: normal;
+		line-height: 1.333;
+		margin-top: 36px;
+		margin-bottom: 12px;
+		color: $secondary-text-color;
 	}
 }
 
 p{
 	line-height: 1.5;
 	margin-bottom: 1.5rem;
+
+	img{
+		width: 100%;
+		height: 100%;
+	}
 }
 
-main h2{
-	font-family: "Aleo";
-	font-size: 1.25rem;
-	line-height: 1.2;
-	margin-top: 0;
-	margin-bottom: 24px;
-	color: $secondary-text-color;
-}
-
-main h3{
-	font-family: "Aleo";
-	font-style: italic;
-	font-weight: normal;
-	font-size: 1.25rem;
-	line-height: 1.2;
-	margin-top: 36px;
-	margin-bottom: 12px;
-	color: $secondary-text-color;
-}
-
-main h4{
-	font-family: "Aleo";
-	font-size: 1.125rem;
-	font-weight: normal;
-	line-height: 1.333;
-	margin-top: 36px;
-	margin-bottom: 12px;
-	color: $secondary-text-color;
+strong, b{
+	font-weight: 500;
 }
 
 ul, ol{
 	padding-left: 20px;
-}
-
-p img{
-	width: 100%;
-	height: 100%;
 }
 
 a{
@@ -240,11 +233,11 @@ button{
 	letter-spacing: 0.031em;
 	margin-bottom: 24px;
 	transition: 500ms ease;
-}
 
-button:hover{
-	cursor: pointer;
-	transform: scale(1.1);
+	&:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+	}
 }
 
 table{

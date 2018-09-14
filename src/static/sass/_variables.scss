@@ -40,3 +40,12 @@ $special-button-text-color: #A8851B;
 $tiny-breakpoint: 450px;
 $medium-breakpoint: 650px;
 $large-breakpoint: 1200px;
+
+// Mixins --------------------------------------------------------------
+
+@mixin tblr($value) {
+	top: $value;
+	bottom: $value;
+	left: $value;
+	right: $value;
+}
