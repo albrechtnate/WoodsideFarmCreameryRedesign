@@ -1,6 +1,6 @@
 body{
 	background-color: $background-color;
-	font-family: Eczar;
+	font-family: $font-body;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	min-width: 320px;
@@ -23,7 +23,7 @@ body{
 		content: "";
 		display: block;
 		z-index: -1;
-		background-image: url(../images/system/stonewall.jpg);
+		background-image: url($image-path + "stonewall.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		image-rendering: pixelated;
@@ -48,7 +48,7 @@ body{
 }
 
 .btn{
-	font-family: "Aleo";
+	font-family: $font-heading;
 	font-weight: 600;
 	background-color: $standard-button-color;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
@@ -77,7 +77,7 @@ body{
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.40);
 	border-radius: 2px;
 	color: $special-button-text-color;
-	font-family: "Aleo";
+	font-family: $font-heading;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -96,7 +96,7 @@ body{
 		display: block;
 		height: 22px;
 		width: 100%;
-		background-image: url("../images/system/btn-special-decoration.svg");
+		background-image: url($image-path + "btn-special-decoration.svg");
 		background-repeat: no-repeat;
 		position: absolute;
 		left: 0;
@@ -113,8 +113,7 @@ body{
 	}
 
 	@media only screen and (min-width: $large-breakpoint){
-		font-size: 1.25rem;
-		line-height: 1.8;
+		@include typography(20px, 36px);
 		letter-spacing: 0.0215em;
 
 		&::before, &::after{
@@ -136,30 +135,27 @@ main{
 	margin-top: 97px;
 
 	h2{
-		font-family: "Aleo";
-		font-size: 1.25rem;
-		line-height: 1.2;
+		font-family: $font-heading;
+		@include typography(20px, 24px);
 		margin-top: 0;
 		margin-bottom: 24px;
 		color: $secondary-text-color;
 	}
 
 	h3{
-		font-family: "Aleo";
+		font-family: $font-heading;
 		font-style: italic;
 		font-weight: normal;
-		font-size: 1.25rem;
-		line-height: 1.2;
+		@include typography(20px, 24px);
 		margin-top: 36px;
 		margin-bottom: 12px;
 		color: $secondary-text-color;
 	}
 
 	h4{
-		font-family: "Aleo";
-		font-size: 1.125rem;
+		font-family: $font-heading;
+		@include typography(18px, 24px);
 		font-weight: normal;
-		line-height: 1.333;
 		margin-top: 36px;
 		margin-bottom: 12px;
 		color: $secondary-text-color;
@@ -199,10 +195,9 @@ label{
 input{
 	width: 100%;
 	max-width: 300px;
-	line-height: 1.5;
+	@include typography(16px, 24px);
 	padding: 8px 10px 4px 10px;
-	font-size: 1rem;
-	font-family: "Eczar";
+	font-family: $font-body;
 	border: 1px solid $light-neutral;
 	box-sizing: border-box;
 	margin-bottom: 24px;
@@ -213,10 +208,9 @@ textarea{
 	width: 100%;
 	max-width: 500px;
 	margin-bottom: 24px;
-	font-size: 1rem;
-	line-height: 1.5;
+	@include typography(16px, 24px);
 	padding: 12px 10px 12px 10px;
-	font-family: "Eczar";
+	font-family: $font-body;
 	border: 1px solid $light-neutral;
 	box-sizing: border-box;
 	height: 144px;
@@ -228,8 +222,7 @@ button{
 	background: none;
 	border: none;
 	color: white;
-	font-size: 1rem;
-	line-height: 1.5;
+	@include typography(16px, 24px);
 	letter-spacing: 0.031em;
 	margin-bottom: 24px;
 	transition: 500ms ease;
@@ -250,8 +243,7 @@ td, th{
 	border: 1px solid $white;
 	padding: 0.5rem;
 	text-align: left;
-	font-size: 16px;
-	line-height: 1.25;
+	@include typography(16px, 20px);
 }
 
 th{

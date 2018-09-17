@@ -34,12 +34,23 @@ $special-button-tint-color: #FFE082;
 $special-button-shade-color: #E6CA75;
 $special-button-text-color: #A8851B;
 
+// Font Family ---------------------------------------------------------
+
+$font-body: "Eczar";
+$font-heading: "Aleo";
+$font-display-1: "Regina Black Hilite";
+$font-display-2: "Cast Iron";
 
 // Breakpoints ---------------------------------------------------------
 
 $tiny-breakpoint: 450px;
 $medium-breakpoint: 650px;
 $large-breakpoint: 1200px;
+
+// File Paths- ---------------------------------------------------------
+
+$image-path: '../images/system/';
+$font-path: '../fonts/';
 
 // Mixins --------------------------------------------------------------
 
@@ -48,4 +59,16 @@ $large-breakpoint: 1200px;
 	bottom: $value;
 	left: $value;
 	right: $value;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin typography($fontsize, $lineheight: null) {
+	font-size: calculateRem($fontsize);
+	@if ($lineheight) {
+		line-height: ($lineheight/$fontsize);
+	}
 }

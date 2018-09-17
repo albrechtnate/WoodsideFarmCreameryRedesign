@@ -1,5 +1,5 @@
 .main-footer__cow-greeting{
-	background-image: url("../images/system/cows.png");
+	background-image: url($image-path + "cows.png");
 	background-size: 241px;
 	background-repeat: no-repeat;
 	height: 238px;
@@ -34,10 +34,9 @@
 	}
 
 	h2{
-		font-family: "Cast Iron";
+		font-family: $font-display-2;
 		color: $secondary-text-color;
-		font-size: 2.5rem;
-		line-height: 0.925;
+		@include typography(40px, 37px);
 		letter-spacing: 0.0415em;
 		font-weight: normal;
 		text-transform: uppercase;
@@ -45,14 +44,14 @@
 	}
 
 	p{
-		font-family: "Aleo";
+		font-family: $font-heading;
 		line-height: 1.1875;
 		letter-spacing: 0.04125em;
 	}
 }
 
 .main-footer__primary{
-	background-image: url("../images/system/wooden-brown-boards.jpg");
+	background-image: url($image-path + "wooden-brown-boards.jpg");
 	background-size: 321px;
 	padding-top: 30px;
 	padding-bottom: 24px;
@@ -64,11 +63,10 @@
 }
 
 .main-footer__address{
-	font-family: "Regina Black Hilite";
-	font-size: 1.625rem;
+	font-family: $font-display-1;
+	@include typography(26px, 34.6px);
 	color: $light-text-color;
 	letter-spacing: 0.0312em;
-	line-height: 1.321;
 	margin-top: 27px;
 	margin-bottom: 27px;
 }
@@ -77,17 +75,16 @@
 	text-align: center;
 	font-weight: 500;
 	color: $secondary-text-color;
-	font-size: 0.875rem;
-	background-image: url("../images/system/horizontal-board.jpg");
+	@include typography(14px, 25px);
+	background-image: url($image-path + "horizontal-board.jpg");
 	background-size: 320px;
 	margin: 0;
-	line-height: 1.786;
 	padding-top: 11.5px;
 	padding-bottom: 11.5px;
 }
 
 .hours-and-date, .hours-and-date a{
-	font-family: "Aleo";
+	font-family: $font-heading;
 	font-style: italic;
 	color: $light-text-color;
 	margin: 0;
@@ -151,7 +148,7 @@
 		margin-bottom: 46px;
 
 		&:before{
-			background-image: url(../images/system/chains-desktop.png);
+			background-image: url($image-path + "chains-desktop.png");
 			background-size: 658px;
 			margin-top: -48px;
 			background-repeat: no-repeat;
@@ -189,9 +186,8 @@
 		a{
 			color: $medium-text-color;
 			text-decoration: none;
-			font-family: "Cast Iron";
-			font-size: 1.75rem;
-			line-height: 1.375;
+			font-family: $font-display-2;
+			@include typography(28px, 38.5px);
 
 			&:hover{
 				color: $light-text-color;
@@ -205,8 +201,7 @@
 	
 	.main-footer__address{
 		width: 402px;
-		font-size: 2.25rem;
-		line-height: 1.1944;
+		@include typography(36px, 43px);
 		letter-spacing: 0.0311em;
 		margin-top: 0;
 		margin-bottom: 1rem;

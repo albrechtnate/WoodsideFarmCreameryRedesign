@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Eczar:400,500,600");
 @font-face {
-  font-family: 'Cast Iron';
+  font-family: "Cast Iron";
   src: url("../fonts/castiron-condensed-webfont.woff2") format("woff2"), url("../fonts/castiron-condensed-webfont.woff") format("woff"); }
 
 @font-face {
-  font-family: 'Regina Black Hilite';
+  font-family: "Regina Black Hilite";
   src: url("../fonts/reginablack-hilite-webfont.woff2") format("woff2"), url("../fonts/reginablack-hilite-webfont.woff") format("woff"); }
 
 @font-face {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   src: url("../fonts/aleo-regular-webfont.woff2") format("woff2"), url("../fonts/aleo-regular-webfont.woff") format("woff"); }
 
 @font-face {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   src: url("../fonts/aleo-italic-webfont.woff2") format("woff2"), url("../fonts/aleo-italic-webfont.woff") format("woff");
   font-style: italic; }
 
@@ -24,7 +24,7 @@
 
 body {
   background-color: #F4F1EB;
-  font-family: Eczar;
+  font-family: "Eczar";
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   min-width: 320px;
@@ -45,7 +45,7 @@ body {
     content: "";
     display: block;
     z-index: -1;
-    background-image: url(../images/system/stonewall.jpg);
+    background-image: url("../images/system/stonewall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: pixelated; }
@@ -151,8 +151,8 @@ main {
   main h4 {
     font-family: "Aleo";
     font-size: 1.125rem;
+    line-height: 1.33333;
     font-weight: normal;
-    line-height: 1.333;
     margin-top: 36px;
     margin-bottom: 12px;
     color: #7B7B55; }
@@ -182,9 +182,9 @@ label {
 input {
   width: 100%;
   max-width: 300px;
+  font-size: 1rem;
   line-height: 1.5;
   padding: 8px 10px 4px 10px;
-  font-size: 1rem;
   font-family: "Eczar";
   border: 1px solid #CFCFCF;
   box-sizing: border-box;
@@ -227,7 +227,7 @@ td, th {
   border: 1px solid #FFFFFF;
   padding: 0.5rem;
   text-align: left;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.25; }
 
 th {
@@ -397,9 +397,9 @@ img.aligncenter {
 .main-footer__address {
   font-family: "Regina Black Hilite";
   font-size: 1.625rem;
+  line-height: 1.33077;
   color: #FFF3DE;
   letter-spacing: 0.0312em;
-  line-height: 1.321;
   margin-top: 27px;
   margin-bottom: 27px; }
 
@@ -408,10 +408,10 @@ img.aligncenter {
   font-weight: 500;
   color: #7B7B55;
   font-size: 0.875rem;
+  line-height: 1.78571;
   background-image: url("../images/system/horizontal-board.jpg");
   background-size: 320px;
   margin: 0;
-  line-height: 1.786;
   padding-top: 11.5px;
   padding-bottom: 11.5px; }
 
@@ -462,7 +462,7 @@ img.aligncenter {
     position: relative;
     margin-bottom: 46px; }
     .footer-nav:before {
-      background-image: url(../images/system/chains-desktop.png);
+      background-image: url("../images/system/chains-desktop.png");
       background-size: 658px;
       margin-top: -48px;
       background-repeat: no-repeat;
@@ -502,7 +502,7 @@ img.aligncenter {
   .main-footer__address {
     width: 402px;
     font-size: 2.25rem;
-    line-height: 1.1944;
+    line-height: 1.19444;
     letter-spacing: 0.0311em;
     margin-top: 0;
     margin-bottom: 1rem; } }
@@ -542,7 +542,7 @@ img.aligncenter {
   font-weight: normal;
   color: #FFF3DE;
   font-size: 2.75rem;
-  line-height: 38px;
+  line-height: 0.86364;
   margin: 0; }
   .intro-section__expressive-type span {
     display: block; }
@@ -552,7 +552,7 @@ img.aligncenter {
       text-transform: uppercase;
       letter-spacing: 0.05em; }
     .intro-section__expressive-type span:last-child {
-      font-size: 35px; }
+      font-size: 2.1875rem; }
 
 .intro-section__image {
   display: none; }
@@ -579,7 +579,7 @@ img.aligncenter {
       display: block; }
   .intro-section__expressive-type {
     font-size: 6.875rem;
-    line-height: 0.8636;
+    line-height: 0.86364;
     margin-bottom: 58px;
     text-align: center;
     margin-top: 25px; }
@@ -587,8 +587,8 @@ img.aligncenter {
       font-size: 2.8125rem;
       line-height: 1; }
     .intro-section__expressive-type span:last-child {
-      font-size: 5.46875rem;
-      line-height: 1.2114; }
+      font-size: 5.5rem;
+      line-height: 1.20455; }
   .intro-section__image {
     display: block;
     border: 10px solid white;
@@ -623,7 +623,7 @@ img.aligncenter {
     .intro-section__intro-text p {
       margin-bottom: 14px;
       font-size: 1.125rem;
-      line-height: 1.3333; } }
+      line-height: 1.33333; } }
 
 /* ---Ice Cream Teaser */
 .ice-cream-teaser {
@@ -632,10 +632,10 @@ img.aligncenter {
   overflow: hidden; }
 
 .ice-cream-teaser__heading {
-  font-family: Cast Iron;
+  font-family: "Cast Iron";
   text-transform: uppercase;
   font-size: 1.75rem;
-  line-height: 1.714;
+  line-height: 1.71429;
   font-weight: normal;
   color: #7A715F;
   margin: 0;
@@ -698,7 +698,7 @@ img.aligncenter {
     margin-bottom: 0.75rem; }
   .ice-cream-teaser__cta {
     font-size: 1.125rem;
-    line-height: 1.3333; }
+    line-height: 1.33333; }
   .ice-cream-teaser__images {
     margin-right: 85px;
     max-width: 1080px;
@@ -749,7 +749,7 @@ img.aligncenter {
     .social-media-section__blurb p.social-media-section__blurb-hashtag {
       font-family: "Aleo";
       font-size: 0.875rem;
-      line-height: 1.214;
+      line-height: 1.21429;
       letter-spacing: 0.0714em;
       margin-top: 11px;
       margin-bottom: 6px; }
@@ -810,7 +810,7 @@ img.aligncenter {
   margin-top: 4px;
   margin-bottom: 0;
   font-size: 0.75rem;
-  line-height: 1.833; }
+  line-height: 1.83333; }
 
 .follow-us-stamp {
   margin: 0;
@@ -978,11 +978,11 @@ img.aligncenter {
   .navigation-page h2 {
     font-family: "Cast Iron";
     font-size: 1.75rem;
+    line-height: 1.71429;
     font-weight: normal;
     color: white;
     background-image: linear-gradient(-180deg, #87875D 0%, #7B7B55 100%);
     margin: 0 0 16px 0;
-    line-height: 1.715;
     text-align: center;
     letter-spacing: 0.0412em; }
   .navigation-page nav > ul {
@@ -997,8 +997,8 @@ img.aligncenter {
     color: #7A715F;
     display: block;
     font-size: 1rem;
-    padding: 0.5rem 0 0.5rem 0;
     line-height: 1.5;
+    padding: 0.5rem 0 0.5rem 0;
     font-weight: bold;
     text-decoration: none;
     font-family: "Aleo"; }
