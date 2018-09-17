@@ -322,15 +322,19 @@ img.aligncenter {
     border-radius: 3px; }
     .main-header__main-nav .menu li {
       display: none; }
-      .main-header__main-nav .menu li:nth-child(-n+6) {
+      .main-header__main-nav .menu li::after {
+        display: inline-block;
+        vertical-align: bottom;
+        content: '\2022';
+        padding: 0 11px;
+        color: #D1C6B6;
+        line-height: 2.375; }
+      .main-header__main-nav .menu li:nth-child(-n+3) {
         display: block; }
       .main-header__main-nav .menu li.main-nav__more-link {
         display: block; }
         .main-header__main-nav .menu li.main-nav__more-link::after {
           display: none; }
-    .main-header__main-nav .menu .separator {
-      color: #D1C6B6;
-      line-height: 2.375; }
   .main-header__main-nav a {
     color: #D1C6B6;
     text-decoration: none;
@@ -341,6 +345,41 @@ img.aligncenter {
       color: #FFF3DE; }
   .main-header__main-nav .current-menu-item a {
     color: #FFF3DE; }
+
+@media only screen and (min-width: 1200px) {
+  .main-header {
+    display: flex;
+    justify-content: space-between; }
+  .logo {
+    position: relative;
+    bottom: 0;
+    width: auto;
+    margin-left: 9.5%;
+    margin-top: 19px; }
+  .main-header__main-nav {
+    position: relative;
+    margin-right: 9.5%;
+    margin-top: 45px; }
+    .main-header__main-nav .menu {
+      margin: 0;
+      min-width: initial;
+      max-width: none;
+      width: auto;
+      justify-content: flex-start;
+      display: inline-block;
+      padding: 0 25px; }
+      .main-header__main-nav .menu li, .main-header__main-nav .menu li:nth-child(-n+3) {
+        display: inline-block;
+        vertical-align: bottom; }
+      .main-header__main-nav .menu li.main-nav__more-link {
+        display: none; }
+      .main-header__main-nav .menu li:nth-last-child(2)::after {
+        display: none; }
+    .main-header__main-nav::before {
+      background-image: url("../images/system/chains-desktop.png");
+      background-size: 658px;
+      margin-top: -48px;
+      z-index: -1; } }
 
 .main-footer__cow-greeting {
   background-image: url("../images/system/cows.png");
@@ -482,21 +521,24 @@ img.aligncenter {
       box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
       border-radius: 3px;
       display: inline-block; }
-    .footer-nav li {
-      display: inline-block;
-      vertical-align: bottom; }
-      .footer-nav li.separator {
+      .footer-nav .menu li {
+        display: inline-block;
+        vertical-align: bottom; }
+        .footer-nav .menu li::after {
+          display: inline-block;
+          vertical-align: bottom;
+          content: '\2022';
+          padding: 0 11px;
+          color: #D1C6B6;
+          line-height: 2.375; }
+      .footer-nav .menu a {
         color: #D1C6B6;
-        line-height: 2.375;
-        padding: 0 11px; }
-    .footer-nav a {
-      color: #D1C6B6;
-      text-decoration: none;
-      font-family: "Cast Iron";
-      font-size: 1.75rem;
-      line-height: 1.375; }
-      .footer-nav a:hover {
-        color: #FFF3DE; }
+        text-decoration: none;
+        font-family: "Cast Iron";
+        font-size: 1.75rem;
+        line-height: 1.375; }
+        .footer-nav .menu a:hover {
+          color: #FFF3DE; }
   .footer-nav-link {
     display: none; }
   .main-footer__address {
@@ -1002,42 +1044,5 @@ img.aligncenter {
     font-weight: bold;
     text-decoration: none;
     font-family: "Aleo"; }
-
-@media only screen and (min-width: 1200px) {
-  .main-header {
-    display: flex;
-    justify-content: space-between; }
-  .logo {
-    position: relative;
-    bottom: 0;
-    width: auto;
-    margin-left: 9.5%;
-    margin-top: 19px; }
-  .main-header__main-nav {
-    position: relative;
-    margin-right: 9.5%;
-    margin-top: 45px; }
-    .main-header__main-nav .menu {
-      margin: 0;
-      min-width: initial;
-      max-width: none;
-      width: auto;
-      justify-content: flex-start;
-      display: inline-block;
-      padding: 0 25px; }
-      .main-header__main-nav .menu li, .main-header__main-nav .menu li:nth-child(-n+6) {
-        display: inline-block;
-        vertical-align: bottom; }
-      .main-header__main-nav .menu li.main-nav__more-link {
-        display: none; }
-      .main-header__main-nav .menu li:nth-last-child(2) {
-        display: none; }
-    .main-header__main-nav::before {
-      background-image: url("../images/system/chains-desktop.png");
-      background-size: 658px;
-      margin-top: -48px;
-      z-index: -1; }
-  .separator {
-    padding: 0 11px; } }
 
 /*# sourceMappingURL=styles.css.map */

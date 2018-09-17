@@ -170,27 +170,30 @@
 			box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
 			border-radius: 3px;
 			display: inline-block;
-		}
 
-		li{
-			display: inline-block;
-			vertical-align: bottom;
+			li{
+				display: inline-block;
+				vertical-align: bottom;
 
-			&.separator{
-				color: $medium-text-color;
-				line-height: 2.375;
-				padding: 0 11px;
+				&::after{
+					display: inline-block;
+					vertical-align: bottom;
+					content: '\2022';
+					padding: 0 11px;
+					color: $medium-text-color;
+					line-height: 2.375;
+				}
 			}
-		}
 
-		a{
-			color: $medium-text-color;
-			text-decoration: none;
-			font-family: $font-display-2;
-			@include typography(28px, 38.5px);
+			a{
+				color: $medium-text-color;
+				text-decoration: none;
+				font-family: $font-display-2;
+				@include typography(28px, 38.5px);
 
-			&:hover{
-				color: $light-text-color;
+				&:hover{
+					color: $light-text-color;
+				}
 			}
 		}
 	}
