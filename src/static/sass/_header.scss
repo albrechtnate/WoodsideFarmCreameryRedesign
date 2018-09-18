@@ -1,0 +1,165 @@
+.main-header{
+	background-color: white;
+	background-image: url($image-path + "header-vertical-paneling.png");
+	background-repeat-y: no-repeat;
+	background-size: 320px;
+	height: 144px;
+	position: relative;
+	background-position-x: center;
+
+	&::after{
+		content: "";
+		display:block;
+		width: 100%;
+		height: 48px;
+		position: absolute;
+		bottom: 0;
+		background-image: url($image-path + "horizontal-board.jpg");
+		background-repeat-y: no-repeat;
+		background-size: 320px;
+		box-shadow: 0 1px 10px 2px rgba(0,0,0,0.21);
+	}
+}
+
+.logo{
+	line-height: 0;
+	margin: 0;
+	position: absolute;
+	bottom: 10px;
+	z-index: 4;
+	width: 100%;
+	text-align: center;
+
+	img{
+		width: 110px;
+		height: 115px;
+	}
+}
+
+.main-header__main-nav{
+	z-index: 3;
+	position: absolute;
+	left: 0;
+	right: 0;
+	animation: drop-in 800ms cubic-bezier(0, 0, 0.02, 1);
+
+	&::before{
+		background-image: url($image-path + "chains.png");
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 168px;
+		background-size: 218px;
+		position: absolute;
+		background-position: center -9px;
+	}
+
+	.menu{
+		margin: 0 auto;
+		padding: 0 5.5%;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+		background-color: $navigation-menu-background-color;
+		box-sizing: border-box;
+		margin-top: 168px;
+		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+		min-width: 290px;
+		max-width: 425px;
+		border-radius: 3px;
+
+		li{
+			display: none;
+
+			&::after{
+				display: inline-block;
+				vertical-align: bottom;
+				content: '\2022';
+				padding: 0 11px;
+				color: $medium-text-color;
+				line-height: 2.375;
+			}
+
+			&:nth-child(-n+3){
+				display: block;
+			}
+
+			&.main-nav__more-link{
+				display: block;
+
+				&::after{
+					display: none;
+				}
+			}
+		}
+	}
+
+	a{
+		color: $medium-text-color;;
+		text-decoration: none;
+		font-family: $font-display-2;
+		@include typography(28px, 38.5px);
+
+		&:hover{
+			color: $light-text-color;
+		}
+	}
+
+	.current-menu-item a{
+		color: $light-text-color;
+	}
+}
+
+@media only screen and (min-width: $large-breakpoint){
+	
+	.main-header{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.logo{
+		position: relative;
+		bottom: 0;
+		width: auto;
+		margin-left: 9.5%;
+		margin-top: 19px;
+	}
+	
+	.main-header__main-nav{
+		position: relative;
+		margin-right: 9.5%;
+		margin-top: 45px;
+
+		.menu{
+			margin: 0;
+			min-width: initial;
+			max-width: none;
+			width: auto;
+			justify-content: flex-start;
+			display: inline-block;
+			padding: 0 25px;
+
+			li, li:nth-child(-n+3){
+				display: inline-block;
+				vertical-align: bottom;
+			}
+
+			li.main-nav__more-link{
+				display: none;
+			}
+
+			li:nth-last-child(2)::after{
+				display: none;
+			}
+		}
+
+		&::before{
+			background-image: url($image-path + "chains-desktop.png");
+			background-size: 658px;
+			margin-top: -48px;
+			z-index: -1;
+		}
+	}
+}
